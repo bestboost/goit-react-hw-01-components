@@ -29,3 +29,14 @@ export const Profile = ({username, tag, avatar, location, stats}) => {
     </ul>
   </div>
 }
+
+console.log(typeof avatar);
+
+Profile.propTypes = {
+  username: propTypes.string.isRequired,
+   tag: propTypes.string.isRequired, 
+   avatar: propTypes.string.isRequired, 
+   location: propTypes.string.isRequired, 
+   stats: propTypes.object.isRequired
+
+}
