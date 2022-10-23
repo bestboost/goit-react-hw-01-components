@@ -1,8 +1,11 @@
 import css from './Profile.module.css'
 
-export const Profile = ({username, tag, avatar, location, stats}) => {
+export const Profile = ({users}) => {
+  console.log(users)
     return <div className={css.profile}>
-    <div className={css.description}>
+       {users.map(user => ( <p className={css.username} key={user.username}>
+        {user.username}</p>))}|
+    {/* <div className={css.description}>
       <img
         src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
         alt="User avatar"
@@ -26,17 +29,15 @@ export const Profile = ({username, tag, avatar, location, stats}) => {
         <span className={css.label}>Likes</span>
         <span className={css.quantity}>3000</span>
       </li>
-    </ul>
+    </ul> */}
   </div>
 }
 
-console.log(typeof avatar);
+// Profile.propTypes = {
+//   username: propTypes.string.isRequired,
+//    tag: propTypes.string.isRequired, 
+//    avatar: propTypes.string.isRequired, 
+//    location: propTypes.string.isRequired, 
+//    stats: propTypes.object.isRequired
 
-Profile.propTypes = {
-  username: propTypes.string.isRequired,
-   tag: propTypes.string.isRequired, 
-   avatar: propTypes.string.isRequired, 
-   location: propTypes.string.isRequired, 
-   stats: propTypes.object.isRequired
-
-}
+// }

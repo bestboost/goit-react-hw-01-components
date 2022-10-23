@@ -1,13 +1,10 @@
 import { Profile } from 'components/profile/Profile';
-import userData from '../../src/user.json';
+import userData from 'user.json';
 
 export const App = () => {
   return (
     <div>
-      <Profile 
-      username={userData}
-      // , tag, avatar, location, stats}
-      />
+      <Profile users={userData}/>
     </div>
   );
 };
