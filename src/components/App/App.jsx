@@ -1,15 +1,17 @@
 import { Profile } from 'components/profile/Profile';
-import user from '../../src/user.json';
+import user from '../../user.json';
+import { Container } from './App.styled';
+
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Profile username={user.username}
                tag={user.tag}
                location={user.location}
                avatar={user.avatar}
                stats={user.stats}
                />
-    </div>
+    </Container>
   );
 };

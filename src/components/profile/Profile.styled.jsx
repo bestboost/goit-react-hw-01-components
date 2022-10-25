@@ -1,27 +1,19 @@
-.background{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 75px;
-    width: 1250px;
-    height: 100%;
-    background-color: rgb(218, 223, 234);
-}
-.profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div` 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-   
+
     width: 350px;
     height: 450px;
     box-shadow: 0 0 5px 1px rgb(201, 199, 199);
     
-}
+`;
 
-.description {
+export const Description = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,67 +21,59 @@
     
     width: 100%;
     height: 85%;
-    background-color:white;
-    border-radius: 4px 4px 0 0;
+    background-color: white;
     border: 1px solid rgb(201, 199, 199);
-}
+    border-radius: 4px 4px 0 0;
+`;
 
-.avatar {
+export const Avatar = styled.img`
     margin-bottom: 0;
-  
     width: 130px;
     border-radius: 50%;
     border: 1px solid rgb(199, 200, 201);
-}
-
-.username {
+`;
+ 
+export const Username = styled.p`
     margin-bottom: 0;
     font-size: large;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
     margin-bottom: 0;
     color: gray;
-}
+`;
 
-.location {
+export const Location = styled.p`
     margin-bottom: 0;
     color: gray;
-}
-.profileList {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-    width: 33.33%;
-     border: 1px solid rgb(199, 200, 201);
- }
+`;
 
- .profileList:first-child {
-    border-radius: 0 0 0 4px;
- }
-
- .profileList:last-child {
-    border-radius: 0 0 4px 0;
- }
-
-.stats {
+export const Stats = styled.ul`
     display: flex;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 25%;
     background-color: rgb(236, 237, 241);
-    border-radius: 0 0 4px 4px;
-}
+    border-radius: 0 0 4px 4px;   
+`;
 
-.label {
+export const StatsList = styled.li`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+     width: calc(100% / 3);
+     border: 1px solid rgb(199, 200, 201);
+ `;
+
+export const Label = styled.span`
     color: gray;
-}
+`;
 
-.quantity {
+export const Quantity = styled.span`
     padding-top: 5px;
     font-weight: bold;
     font-size: 20px;
-}
+`;

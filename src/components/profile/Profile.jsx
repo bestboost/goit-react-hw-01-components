@@ -1,41 +1,39 @@
-import css from './Profile.module.css'
 import PropTypes from 'prop-types';
+import {Card, Description, Avatar, Username, Tag, Location, StatsList, Stats, Label, Quantity} from './Profile.styled';
 
 export const Profile = ({username, tag, avatar, location, stats}) => {
-    return <div className={css.background}>
-    <div className={css.profile} key={username}>
-    <div className={css.description}>
-      <img
+    return (
+    <Card>
+    <Description>
+      <Avatar
         src={avatar}
-        alt="User avatar"
-        className={css.avatar}
-      />
-      <p className={css.username}>{username}</p>
-      <p className={css.tag}>{tag}</p>
-      <p className={css.location}>{location}</p>
-    </div>
+        alt="User avatar"/>
+      <Username>{username}</Username>
+      <Tag>{tag}</Tag>
+      <Location>{location}</Location>
+    </Description>
   
-    <ul className={css.stats}>
-      <li className={css.profileList}>
-        <span className={css.label}>Followers</span>
-        <span className={css.quantity}>{stats.followers}</span>
-      </li>
-      <li className={css.profileList}>
-        <span className={css.label}>Views</span>
-        <span className={css.quantity}>{stats.views}</span>
-      </li>
-      <li className={css.profileList}>
-        <span className={css.label}>Likes</span>
-        <span className={css.quantity}>{stats.likes}</span>
-      </li>
+    <Stats>
+      <StatsList>
+        <Label>Followers</Label>
+        <Quantity>{stats.followers}</Quantity>
+      </StatsList>
+      <StatsList>
+        <Label>Views</Label>
+        <Quantity>{stats.views}</Quantity>
+      </StatsList>
+      <StatsList>
+        <Label>Likes</Label>
+        <Quantity>{stats.likes}</Quantity>
+      </StatsList>
      
-    </ul>
-  </div>
-  </div>
-}
+    </Stats>
+    </Card>
+);
+};
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
+   username: PropTypes.string.isRequired,
    tag: PropTypes.string.isRequired, 
    avatar: PropTypes.string.isRequired, 
    location: PropTypes.string.isRequired, 
