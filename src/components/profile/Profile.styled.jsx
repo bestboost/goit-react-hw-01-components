@@ -19,7 +19,7 @@ export const Description = styled.div`
     justify-content: center;
     align-items: center;
     
-    width: 100%;
+    width: 99%;
     height: 85%;
     background-color: white;
     border: 1px solid rgb(201, 199, 199);
@@ -55,7 +55,6 @@ export const Stats = styled.ul`
     width: 100%;
     height: 25%;
     background-color: rgb(236, 237, 241);
-    border-radius: 0 0 4px 4px;   
 `;
 
 export const StatsList = styled.li`
