@@ -4,7 +4,7 @@ import { Container } from './App.styled';
 import {Statistics} from 'components/Statistics/Statistics';
 import data from '../../data.json';
 import { FriendList } from 'components/FriendList/FriendList';
-
+import friends from '../../friends.json'
 
 export const App = () => {
   return (

@@ -6,8 +6,9 @@ export const StatCard = styled.section`
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    margin-bottom: 80px;
 
-    width: 400px;
+    width: 350px;
     height: 200px;
     background-color: yellow;
 `;
