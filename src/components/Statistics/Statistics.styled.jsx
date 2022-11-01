@@ -11,6 +11,7 @@ export const StatCard = styled.section`
     width: 350px;
     height: 200px;
     background-color: yellow;
+    border-radius: 0 0 4px 4px;
 `;
 export const StatTitle = styled.h2`
     padding: auto;
@@ -26,6 +27,7 @@ export const StatList = styled.ul`
     width: 100%;
     height: 45%;
     background-color: rgb(200, 150, 300);
+    border-radius: 0 0 4px 4px;
 `;
 
 export const StatKey = styled.li`
@@ -36,6 +38,7 @@ align-items: center;
 
  width: calc(100% / 4);
  border: 1px solid rgb(199, 200, 201);
+ border-radius: 0 0 4px 4px;
 `;
       
 
