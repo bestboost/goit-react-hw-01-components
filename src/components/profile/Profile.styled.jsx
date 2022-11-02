@@ -3,14 +3,13 @@ import styled from '@emotion/styled';
 export const Card = styled.div` 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-bottom: 80px;
-
     width: 350px;
     height: 450px;
-    box-shadow: 0 0 5px 1px rgb(201, 199, 199);
+
+    margin-bottom: ${p => p.theme.space[7]}px; 
+    border-radius: ${p  => p.theme.radii.normal};
+    box-shadow: ${p => p.theme.shadows.profile};
     
 `;
 
@@ -19,34 +18,38 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    width: 99%;
+    width: 100%;
     height: 85%;
-    background-color: white;
-    border: 1px solid rgb(201, 199, 199);
-    border-radius: 4px 4px 0 0;
+
+    background-color: ${p => p.theme.colors.secondBackground};
+    border-radius: ${p  => p.theme.radii.top};
 `;
 
 export const Avatar = styled.img`
-    margin-bottom: 0;
     width: 130px;
-    border-radius: 50%;
-    border: 1px solid rgb(199, 200, 201);
+
+    margin-bottom: ${p => p.theme.space[0]};
+    background-color: ${p => p.theme.colors.itemBackground};
+    border-radius: ${p => p.theme.radii.round};
+    border: ${p => p.theme.border.normal};
+    border-color: ${p => p.theme.colors.border};
 `;
  
 export const Username = styled.p`
-    margin-bottom: 0;
-    font-size: large;
+    margin-bottom: ${p => p.theme.space[0]};
+    font-size: ${p => p.theme.fontSizes.l}px;
+    font-weight: ${p => p.theme.fontWeights.bolder};
+    color: ${p => p.theme.colors.primary}
 `;
 
 export const Tag = styled.p`
-    margin-bottom: 0;
-    color: gray;
+    margin-bottom: ${p => p.theme.space[0]}; 
+    color: ${p => p.theme.colors.text};
 `;
 
 export const Location = styled.p`
-    margin-bottom: 0;
-    color: gray;
+    margin-bottom: ${p => p.theme.space[0]}; 
+    color: ${p => p.theme.colors.text};
 `;
 
 export const Stats = styled.ul`
@@ -55,7 +58,9 @@ export const Stats = styled.ul`
     padding: 0;
     width: 100%;
     height: 25%;
-    background-color: rgb(236, 237, 241);
+
+    background-color: ${p => p.theme.colors.itemBackground};
+    border-radius: ${p  => p.theme.radii.bottom};
 `;
 
 export const StatsList = styled.li`
@@ -63,17 +68,20 @@ export const StatsList = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-     width: calc(100% / 3);
-     border: 1px solid rgb(199, 200, 201);
+    width: calc(100% / 3);
+    
+    border: ${p => p.theme.border.normal};
+    border-color: ${p => p.theme.colors.border};
+    border-radius: ${p  => p.theme.radii.bottom};
  `;
 
 export const Label = styled.span`
-    color: gray;
+    color: ${p => p.theme.colors.text};
 `;
 
 export const Quantity = styled.span`
-    padding-top: 5px;
-    font-weight: bold;
-    font-size: 20px;
+    padding-top: ${p => p.theme.space[2]}px;
+    font-weight: ${p => p.theme.fontWeights.bolder};
+    font-size: ${p => p.theme.fontSizes.l}px;
+    color: ${p => p.theme.colors.primary};
 `;

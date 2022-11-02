@@ -5,10 +5,10 @@ export const Container = styled.div `
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 80px;
-        margin: 0;
-        
-        width: 1250px;
-        background-color: rgb(218, 223, 234);
+        // width: 1250px;
+
+        padding: ${p => p.theme.space[7]}px;
+        margin: ${p => p.theme.space[0]}px;
+        background: ${p => p.theme.colors.background};
 
 `;

@@ -3,52 +3,50 @@ import styled from '@emotion/styled';
 export const StatCard = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin: auto;
-    margin-bottom: 80px;
-
     width: 350px;
-    height: 200px;
-    background-color: yellow;
-    border-radius: 0 0 4px 4px;
+ 
+    margin-bottom: ${p => p.theme.space[7]}px; 
+    border-radius: ${p  => p.theme.radii.normal};
+    background-color: ${p => p.theme.colors.secondBackground};
 `;
 export const StatTitle = styled.h2`
-    padding: auto;
-    margin: auto;
-    color: rgb(120, 120, 120);
-    
+    padding: ${p => p.theme.space[4]}px;
+    color: ${p => p.theme.colors.primary};    
 `;
 
 export const StatList = styled.ul`
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: center; 
     width: 100%;
-    height: 45%;
+
+    margin: ${p => p.theme.space[0]}; 
+    padding: ${p => p.theme.space[0]};
     background-color: rgb(200, 150, 300);
-    border-radius: 0 0 4px 4px;
+    border-radius: ${p  => p.theme.radii.bottom};
 `;
 
 export const StatKey = styled.li`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
 
- width: calc(100% / 4);
- border: 1px solid rgb(199, 200, 201);
- border-radius: 0 0 4px 4px;
+    padding: ${p => p.theme.space[4]}px;
+    border: ${p => p.theme.border.normal};
+    border-color: ${p => p.theme.colors.border};
+    border-radius: ${p  => p.theme.radii.bottom};
 `;
       
 
 export const StatLabel = styled.span`
-    padding-bottom: 10px;
-    font-size: 15px;
-    color: white;
+    padding-bottom: ${p => p.theme.space[4]}px;
+    font-size: ${p => p.theme.fontSizes.m}px;
+    color: ${p => p.theme.colors.secondary};
 `;
 
 export const Percentage = styled.span`
-    font-size: 25px;
-    color: white;
+    font-size: ${p => p.theme.fontSizes.xl}px;
+    color: ${p => p.theme.colors.secondary};
 `;

@@ -6,6 +6,7 @@ import data from '../../data.json';
 import { FriendList } from 'components/FriendList/FriendList';
 import friends from '../../friends.json'
 
+
 export const App = () => {
   return (
     <Container>
