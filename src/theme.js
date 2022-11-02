@@ -8,6 +8,7 @@ export const theme = {
       primary: '#3d464d',
       secondary: '#ffffff',
       border: '#dcdcde',
+      table: '#02edd1'
     },
 
     fonts: {

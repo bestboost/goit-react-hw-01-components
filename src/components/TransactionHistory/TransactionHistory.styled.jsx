@@ -1,15 +1,22 @@
 import styled from '@emotion/styled';
 
 export const TransactionTable = styled.table`
-display: flex;
-`;
+    width: 750px;
+
+    border-radius: ${p  => p.theme.radii.normal};
+    background-color: ${p => p.theme.colors.secondBackground};
+    `;
 
 export const TableHead = styled.thead`
-display: flex;
+   
+    font-size: ${p => p.theme.fontSizes.m}px;
+    color: ${p => p.theme.colors.secondary};
+    background-color: ${p => p.theme.colors.table};
 `;
 
 export const Row = styled.tr`
-display: flex;
+    padding: ${p => p.theme.space[1]}px;
+    margin: ${p => p.theme.space[8]};
 `;
 
 export const RowHead = styled.th`

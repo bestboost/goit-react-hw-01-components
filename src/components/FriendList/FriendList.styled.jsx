@@ -8,6 +8,7 @@ export const List = styled.ul`
     width: 350px; 
 
     margin: ${p => p.theme.space[0]}; 
+    margin-bottom: ${p => p.theme.space[7]}px; 
     padding: ${p => p.theme.space[0]}; 
     
     background-color: yellow;
