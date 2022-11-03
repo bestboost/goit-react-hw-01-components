@@ -29,6 +29,7 @@ export const theme = {
     },
 
     border: {
+        none: 'none',
         normal: '1px solid',
     },
 

@@ -2,40 +2,42 @@ import styled from '@emotion/styled';
 
 export const TransactionTable = styled.table`
     width: 750px;
-
-    border-radius: ${p  => p.theme.radii.normal};
-    background-color: ${p => p.theme.colors.secondBackground};
-    `;
+    box-shadow: ${p => p.theme.shadows.transaction}
+`;
 
 export const TableHead = styled.thead`
-   
     font-size: ${p => p.theme.fontSizes.m}px;
     color: ${p => p.theme.colors.secondary};
     background-color: ${p => p.theme.colors.table};
 `;
 
 export const Row = styled.tr`
-    padding: ${p => p.theme.space[1]}px;
-    margin: ${p => p.theme.space[8]};
+
 `;
 
 export const RowHead = styled.th`
-display: flex;
-`;
+    padding: ${p => p.theme.space[3]}px;
+`;    
 
 export const Data = styled.tbody`
-display: flex;
+   text-align: center;
+
+   font-size: ${p => p.theme.fontSizes.m}px;
+   color: ${p => p.theme.colors.text};
+   background-color: ${p => p.theme.colors.secondBackground}
 `;
     
 export const Type  = styled.td`
-display: flex;
+    padding: ${p => p.theme.space[3]}px;
+    padding-right: ${p => p.theme.space[0]};
+    padding-left: ${p => p.theme.space[0]};
 `;
 
 export const Amount  = styled.td`
-display: flex;
+
 `;
 
 export const Currency  = styled.td`
-display: flex;
+
 `;
       
