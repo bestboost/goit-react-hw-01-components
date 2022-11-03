@@ -1,18 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Card = styled.div` 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    height: 450px;
-
-    margin-bottom: ${p => p.theme.space[7]}px; 
-    border-radius: ${p  => p.theme.radii.normal};
-    box-shadow: ${p => p.theme.shadows.profile};
-    
-`;
-
 export const Description = styled.div`
     display: flex;
     flex-direction: column;
@@ -72,7 +59,13 @@ export const StatsList = styled.li`
     
     border: ${p => p.theme.border.normal};
     border-color: ${p => p.theme.colors.border};
-    border-radius: ${p  => p.theme.radii.bottom};
+
+    :first-og-type {
+        border-radius: ${p  => p.theme.radii.bottomRight};
+    }
+    :last-child {
+    border-radius: ${p  => p.theme.radii.bottomLeft};
+    }
  `;
 
 export const Label = styled.span`

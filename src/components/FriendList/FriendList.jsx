@@ -1,9 +1,19 @@
 import PropTypes from 'prop-types';
-import { List, FriendItem, Status, FriendAvatar, FriendName} from './FriendList.styled';
+import { FriendItem, Status, FriendAvatar, FriendName} from './FriendList.styled';
+import { Box } from '../Box';
 
 export const FriendList = ({friends}) => {
     return (
-        <List>
+        <Box
+        display='flex'
+        flexDirection='column'
+        justifyContent='space-between' 
+        alignItems='center'
+        width={350}
+        m={0}
+        mb={7}
+        p={0}
+        as='ul'>
            {friends.map(friend => (
              <FriendItem key={friend.id}>
                 <Status>{friend.isOnline}</Status>
@@ -11,7 +21,7 @@ export const FriendList = ({friends}) => {
                   <FriendName>{friend.name}</FriendName>
              </FriendItem>
            ))}
-      </List>
+      </Box>
     )
 };
 

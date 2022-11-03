@@ -1,9 +1,19 @@
 import PropTypes from 'prop-types';
-import {Card, Description, Avatar, Username, Tag, Location, StatsList, Stats, Label, Quantity} from './Profile.styled';
+import {Description, Avatar, Username, Tag, Location, StatsList, Stats, Label, Quantity} from './Profile.styled';
+import { Box } from '../Box';
 
 export const Profile = ({username, tag, avatar, location, stats}) => {
     return (
-    <Card>
+    <Box 
+    display='flex'
+    flexDirection='column' 
+    alignItems='center'
+    width={350}
+    height={450}
+    mb={7}
+    borderRadius='normal'
+    boxShadow='profile'
+    as='div'>
     <Description>
       <Avatar
         src={avatar}
@@ -28,7 +38,7 @@ export const Profile = ({username, tag, avatar, location, stats}) => {
       </StatsList>
      
     </Stats>
-    </Card>
+    </Box>
 );
 };
 

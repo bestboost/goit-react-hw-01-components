@@ -1,37 +1,14 @@
 import PropTypes from 'prop-types';
-import {TransactionTable, TableHead, Row, RowHead, Data, Type, Amount, Currency} from './TransactionHistory.styled';
+import {TableHead, Row, RowHead, Data, Type, Amount, Currency} from './TransactionHistory.styled';
+import { Box } from '../Box';
 
 export const TransactionHistory = ({items}) => {
     return (
-//         <table>
- 
-//   <thead>
-//     <tr>
-//       <th>Train number</th>
-//       <th>Route</th>
-//       <th>Travel time</th>
-//     </tr>
-//   </thead>
-
-//   <tbody>
-//     <tr>
-//       <td>433</td>
-//       <td>London - Paris</td>
-//       <td>5 hours</td>
-//     </tr>
-//     <tr>
-//       <td>701</td>
-//       <td>New York - Chicago</td>
-//       <td>7 hours</td>
-//     </tr>
-//     <tr>
-//       <td>258</td>
-//       <td>Oslo - Warsaw</td>
-//       <td>4 hours</td>
-//     </tr>
-//   </tbody>
-// </table>
-        <TransactionTable>
+        <Box
+        width={650}
+        border-radius='normal'
+        box-shadow='transaction'
+        as='table'>
   <TableHead>
     <Row>
       <RowHead>Type</RowHead>
@@ -49,7 +26,7 @@ export const TransactionHistory = ({items}) => {
       </Row>
     ))}
   </Data>
-</TransactionTable>
+</Box>
 
     );
 };

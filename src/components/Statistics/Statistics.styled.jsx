@@ -1,18 +1,10 @@
 import styled from '@emotion/styled';
 
-export const StatCard = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
- 
-    margin-bottom: ${p => p.theme.space[7]}px; 
-    border-radius: ${p  => p.theme.radii.normal};
-    background-color: ${p => p.theme.colors.secondBackground};
-`;
 export const StatTitle = styled.h2`
+    text-transform: uppercase;
+
     padding: ${p => p.theme.space[4]}px;
-    color: ${p => p.theme.colors.primary};    
+    color: ${p => p.theme.colors.title};    
 `;
 
 export const StatList = styled.ul`
@@ -36,7 +28,12 @@ export const StatKey = styled.li`
     padding: ${p => p.theme.space[4]}px;
     border: ${p => p.theme.border.normal};
     border-color: ${p => p.theme.colors.border};
-    border-radius: ${p  => p.theme.radii.bottom};
+    :first-of-type {
+        border-radius: ${p  => p.theme.radii.topRight};
+        }
+        :last-child {
+        border-radius: ${p  => p.theme.radii.topLeft};
+        }
 `;
       
 

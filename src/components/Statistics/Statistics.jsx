@@ -1,9 +1,17 @@
 import PropTypes from 'prop-types';
-import {StatCard, StatTitle, StatList, StatKey, StatLabel, Percentage} from 'components/Statistics/Statistics.styled'
+import {StatTitle, StatList, StatKey, StatLabel, Percentage} from 'components/Statistics/Statistics.styled'
+import { Box } from '../Box';
 
 export const Statistics = ({title, stats}) => {
     return (
-        <StatCard>
+        <Box
+        display='flex'
+        flexDirection='column' 
+        alignItems='center'
+        width={350}
+        mb={7}
+        bg='secondBackground'
+        as='section'>
           <StatTitle>{title}</StatTitle>
 
   <StatList>
@@ -14,7 +22,7 @@ export const Statistics = ({title, stats}) => {
         </StatKey>
       ))}
   </StatList>
-  </StatCard>
+  </Box>
     )};
 
 Statistics.propTypes = {

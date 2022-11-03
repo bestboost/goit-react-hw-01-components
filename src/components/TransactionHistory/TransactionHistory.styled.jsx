@@ -1,11 +1,8 @@
 import styled from '@emotion/styled';
 
-export const TransactionTable = styled.table`
-    width: 750px;
-    box-shadow: ${p => p.theme.shadows.transaction}
-`;
-
 export const TableHead = styled.thead`
+    text-transform: uppercase;
+
     font-size: ${p => p.theme.fontSizes.m}px;
     color: ${p => p.theme.colors.secondary};
     background-color: ${p => p.theme.colors.table};
@@ -17,6 +14,12 @@ export const Row = styled.tr`
 
 export const RowHead = styled.th`
     padding: ${p => p.theme.space[3]}px;
+    :first-of-type {
+        border-radius: ${p  => p.theme.radii.topRight};
+        }
+        :last-child {
+        border-radius: ${p  => p.theme.radii.topLeft};
+        }
 `;    
 
 export const Data = styled.tbody`
@@ -24,20 +27,21 @@ export const Data = styled.tbody`
 
    font-size: ${p => p.theme.fontSizes.m}px;
    color: ${p => p.theme.colors.text};
-   background-color: ${p => p.theme.colors.secondBackground}
+   background-color: ${p => p.theme.colors.secondBackground};
 `;
     
 export const Type  = styled.td`
+    text-transform: capitalize;
+
     padding: ${p => p.theme.space[3]}px;
-    padding-right: ${p => p.theme.space[0]};
-    padding-left: ${p => p.theme.space[0]};
 `;
 
 export const Amount  = styled.td`
-
+    padding: ${p => p.theme.space[3]}px;
 `;
 
 export const Currency  = styled.td`
-
+    padding: ${p => p.theme.space[3]}px;
+  
 `;
       
