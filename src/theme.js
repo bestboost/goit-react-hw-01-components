@@ -5,12 +5,14 @@ export const theme = {
       text: '#a7aaad',
       title: '#2c3338',
       background: '#f0f0f1', 
-      secondBackground                                  : '#ffffff',
+      secondBackground: '#ffffff',                                
       itemBackground: '#f0f6fc',
       primary: '#3d464d',
       secondary: '#ffffff',
       border: '#dcdcde',
-      table: '#02edd1'
+      table: '#02edd1',
+      isOnline: '#03dc3f',
+      isOffline: '#f30505'
     },
 
     fonts: {
@@ -49,7 +51,7 @@ export const theme = {
     shadows: {
         profile: '0 0 4px 1px rgb(201, 199, 199)',
         friendList: '0px 2px 5px 2px rgb(201, 199, 199)',
-        transaction: '0px',
+        transaction: '0px 2px 4px rgb(201, 199, 199)',
     }
 
 }

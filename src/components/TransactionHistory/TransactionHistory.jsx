@@ -7,7 +7,6 @@ export const TransactionHistory = ({items}) => {
         <Box
         width={650}
         border-radius='normal'
-        box-shadow='transaction'
         as='table'>
   <TableHead>
     <Row>

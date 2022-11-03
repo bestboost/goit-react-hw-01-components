@@ -16,7 +16,11 @@ export const FriendItem = styled.li`
 `;
 
 export const Status = styled.span`
+    width: 20px;
+    heigth: 20px;
     margin-right: ${p => p.theme.space[4]}px;
+    background-color: ${p => p.theme.isOnline};
+    border-radius: ${p => p.theme.radii.round}; 
 `;
 
 export const FriendAvatar = styled.img`
