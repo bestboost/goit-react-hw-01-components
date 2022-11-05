@@ -3,7 +3,8 @@ import {TableHead, Row, RowHead, Data, Type, Amount, Currency} from './Transacti
 import { Box } from '../Box';
 
 export const TransactionHistory = ({items}) => {
-    return (
+
+  return (
         <Box
         width={650}
         border-radius='normal'
@@ -17,7 +18,7 @@ export const TransactionHistory = ({items}) => {
   </TableHead>
 
   <Data>
-    {items.map(item => (
+    {items.map((item) => (
       <Row key={item.id}>
         <Type>{item.type}</Type>
         <Amount>{item.amount}</Amount>

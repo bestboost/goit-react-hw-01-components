@@ -23,9 +23,9 @@ export const StatKey = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
 
-    padding: ${p => p.theme.space[4]}px;
+    padding: ${p => p.theme.space[3]}px;
     border: ${p => p.theme.border.normal};
     border-color: ${p => p.theme.colors.border};
     :first-of-type {

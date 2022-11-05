@@ -11,8 +11,8 @@ export const theme = {
       secondary: '#ffffff',
       border: '#dcdcde',
       table: '#02edd1',
-      isOnline: '#03dc3f',
-      isOffline: '#f30505'
+      online: '#03dc3f',
+      offline: '#f30505',
     },
 
     fonts: {

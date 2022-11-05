@@ -22,12 +22,13 @@ export const RowHead = styled.th`
         }
 `;    
 
+
 export const Data = styled.tbody`
    text-align: center;
 
    font-size: ${p => p.theme.fontSizes.m}px;
    color: ${p => p.theme.colors.text};
-   background-color: ${p => p.theme.colors.secondBackground};
+   background-color: ${p =>{return p.line % 2 === 0 ? p.theme.colors.table : p.theme.colors.secondBackground}};
    box-shadow: ${p => p.theme.shadows.transaction};
 `;
     

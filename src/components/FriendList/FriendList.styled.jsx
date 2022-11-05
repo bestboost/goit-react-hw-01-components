@@ -15,11 +15,13 @@ export const FriendItem = styled.li`
     }
 `;
 
+// const setBgColor = p => {}
+
 export const Status = styled.span`
-    width: 20px;
-    heigth: 20px;
+    width: 5px;
+    padding: 10px 7px;  
     margin-right: ${p => p.theme.space[4]}px;
-    background-color: ${p => p.theme.isOnline};
+    background-color: ${p => {return p.status ? p.theme.colors.online : p.theme.colors.offline}};
     border-radius: ${p => p.theme.radii.round}; 
 `;
 

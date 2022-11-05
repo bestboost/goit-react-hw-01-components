@@ -16,10 +16,10 @@ export const FriendList = ({friends}) => {
         as='ul'>
            {friends.map(friend => (
              <FriendItem key={friend.id}>
-                <Status>{friend.isOnline}</Status>
+                <Status status={friend.isOnline}>{friend.isOnline}</Status>
                  <FriendAvatar src={friend.avatar} alt="User avatar" width="58" />
                   <FriendName>{friend.name}</FriendName>
-             </FriendItem>
+             </FriendItem> 
            ))}
       </Box>
     )
