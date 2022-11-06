@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 export const theme = {
     colors: {
       text: '#a7aaad',
