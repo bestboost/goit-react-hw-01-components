@@ -7,7 +7,7 @@ export const theme = {
       background: '#f0f0f1', 
       secondBackground: '#ffffff',                                
       itemBackground: '#f0f6fc',
-      primary: '#3d464d',
+    //   primary: '#3d464d',
       secondary: '#ffffff',
       border: '#dcdcde',
       table: '#02edd1',
